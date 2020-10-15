@@ -1,0 +1,79 @@
+body {
+	font-family: verdana,sans-serif;
+	font-size: 13px;
+	color:reg(48,48,48,);
+}
+#start{
+	width: 960px;
+	margin: 0 auto;
+}
+#start h3 {
+	text-align: center;
+}
+#error {
+	color:red;
+	font-size:12px;
+	font-weight: bold;
+	height: 20px;
+}
+#start p {
+	text-align: center;
+}
+#start #formularz, #gra {
+	border-top:1px dotted #aaa;
+	border-bottom:1px dotted #aaa;
+}
+#gra  {
+	background-color: #fef;
+}
+#formularz {
+	width: 500px;
+	margin: 0 auto;
+}
+#formularz table{
+	width: 370px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#kolejka{
+	width: 500px;	
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;	
+	text-align: center;
+	background-color:#75CEC6;
+	border:2px dashed #5229F1;	
+}
+#kolejka span{
+	margin-right: 50px;	
+}
+span.active_player{
+	background-color: yellow;
+}
+table#plansza {
+	border-collapse: collapse;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+table#plansza td{
+	padding: 0;
+	margin: 0;
+}
+table#plansza img{
+
+}
+div#wynik{
+	width: 600px;
+	margin: 0 auto;
+	outline: 0px solid green;
+	text-align: center;
+}
+.message {
+	font-size: 18px;
+	color:#3DA358;
+}
+
+
+
+
