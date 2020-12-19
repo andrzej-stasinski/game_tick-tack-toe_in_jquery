@@ -3,9 +3,13 @@ body {
 	font-size: 13px;
 	color:reg(48,48,48,);
 }
+#wrapper {
+	text-align: center;
+}
 #start{
-	width: 960px;
-	margin: 0 auto;
+	width: 400px;
+    margin: 0 auto;
+    max-width: 960px;
 }
 #start h3 {
 	text-align: center;

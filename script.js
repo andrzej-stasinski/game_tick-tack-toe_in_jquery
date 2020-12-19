@@ -2,10 +2,8 @@ $(function() {
 
 	var plansza = new Array(8);
 
-
 	function wygrana(znak){
 		if(znak=='o') {
-			
 			//console.log("Wygrał: ", gracz1);
 			var winner = $("span.p1").text();
 			console.log("Wygrał: ", winner);
@@ -24,9 +22,7 @@ $(function() {
 		$("table#plansza").fadeOut("slow");
 		$("span.message").text(info);
 		$("div#wynik").fadeIn("slow");
-		
 	}
-
 
 	function sprawdz(znak){
 		console.log("znak w tablicy = ", znak);
@@ -63,7 +59,6 @@ $(function() {
 			wygrana('r');
 		}		
 	}
-
 
 	// obramowanie do planszy
 	function rysujPlansze(){
@@ -102,8 +97,7 @@ $(function() {
 				$("span.p2").text(gracz2);
 				$("#start").slideUp("slow");
 				$("#gra").slideDown("slow");
-			}
-			
+			}	
 		};
 		return false;
 	});
@@ -120,7 +114,6 @@ $(function() {
 
 			//alert("klik na planszy");
 			if($("span.p1.active_player").length) {
-
 				// obsluga dla gracza 1
 				//alert("player 1 " + $(this).attr("src"));
 				var gracz = 1;
@@ -133,7 +126,6 @@ $(function() {
 				plansza[index] = "o";
 				sprawdz("o");
 			} else {
-
 				// obsługa dla gracza 2
 				var gracz = 2;
 				$(this).attr("src","./img/krzyzyk.jpg");
@@ -143,7 +135,6 @@ $(function() {
 				sprawdz("x");
 			};
 		};
-
 	});
 
 rysujPlansze();

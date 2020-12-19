@@ -8,66 +8,70 @@
 	<script src="script.js"></script>
 </head>
 <body>
-	<h3>Tic Tac Toe - kółko i krzyżyk</h3>
 
-	<div id="start">
-		<h3>Enter names of the players</h3>
-		
-		<div id="formularz">
+	<div id="wrapper">
+		<h3>Tic Tac Toe - kółko i krzyżyk</h3>
+
+		<div id="start">
+			<h3>Enter names of the players</h3>
 			
-			<form action="">
+			<div id="formularz">
+				
+				<form action="">
 
-				<table>
-					<tr>
-						<td></td>
-						<td><div id="error"><span class="error"></span></div></td>
-					</tr>
-					<tr>
-						<td class="player">Gracz 1:</td>
-						<td><input type="text" name="p1"/> - kółka</td>
-					</tr>
-					<tr>
-						<td class="player">Gracz 1:</td>
-						<td><input type="text" name="p2"/> - krzyżyki</td>
-					</tr>
-					<tr>
-						<td colspan="2"><button>Graj</button></td>
-					</tr>					
-				</table>
-			</form>
+					<table>
+						<tr>
+							<td></td>
+							<td><div id="error"><span class="error"></span></div></td>
+						</tr>
+						<tr>
+							<td class="player">Player 1:</td>
+							<td><input type="text" name="p1"/> - kółka</td>
+						</tr>
+						<tr>
+							<td class="player">Player 1:</td>
+							<td><input type="text" name="p2"/> - krzyżyki</td>
+						</tr>
+						<tr>
+							<td colspan="2"><button>Graj</button></td>
+						</tr>					
+					</table>
+				</form>
+			</div>
+			<p>Game in jQuery &copy; simple version</p>
 		</div>
-		<p>Game in jQuery &copy; made by AS</p>
-	</div>
 
 
-	<div id="gra" style="display:none;">
-		<div id="kolejka">
-			<span class="p1">Rozalinda</span>
-			<span class="p2">Bernadeta</span>
+		<div id="gra" style="display:none;">
+			<div id="kolejka">
+				<span class="p1">Rozalinda</span>
+				<span class="p2">Bernadeta</span>
+			</div>
+			<table id="plansza">
+				<tr>
+					<td><img class="blank" src="./img/blank.jpg" alt=""></td>
+					<td><img class="blank" src="./img/blank.jpg" alt=""></td>
+					<td><img class="blank" src="./img/blank.jpg" alt=""></td>
+				</tr>
+				<tr>
+					<td><img class="blank" src="./img/blank.jpg" alt=""></td>
+					<td><img class="blank" src="./img/blank.jpg" alt=""></td>
+					<td><img class="blank" src="./img/blank.jpg" alt=""></td>
+				</tr>
+				<tr>
+					<td><img class="blank" src="./img/blank.jpg" alt=""></td>
+					<td><img class="blank" src="./img/blank.jpg" alt=""></td>
+					<td><img class="blank" src="./img/blank.jpg" alt=""></td>
+				</tr>
+			</table>
 		</div>
-		<table id="plansza">
-			<tr>
-				<td><img class="blank" src="./img/blank.jpg" alt=""></td>
-				<td><img class="blank" src="./img/blank.jpg" alt=""></td>
-				<td><img class="blank" src="./img/blank.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td><img class="blank" src="./img/blank.jpg" alt=""></td>
-				<td><img class="blank" src="./img/blank.jpg" alt=""></td>
-				<td><img class="blank" src="./img/blank.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td><img class="blank" src="./img/blank.jpg" alt=""></td>
-				<td><img class="blank" src="./img/blank.jpg" alt=""></td>
-				<td><img class="blank" src="./img/blank.jpg" alt=""></td>
-			</tr>
-		</table>
+
+		<!-- <div id="wynik" style="display:none"> -->
+		<div id="wynik">
+			<span class="message"></span>
+		</div>		
 	</div>
 
-	<!-- <div id="wynik" style="display:none"> -->
-	<div id="wynik">
-		<span class="message"></span>
-	</div>
 
 </body>
 </html>
